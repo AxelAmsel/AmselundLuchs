@@ -9,6 +9,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+   min-height:100%;
+   position:relative;
+}
+
+.body {
+  height: 100vh;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+
 @media only screen and (min-width: 680px) {
 
   .left {
@@ -37,11 +58,19 @@ body {
 
 
 .right {
-    position: absolute;
+    position: relative;
     background-color: white;
     width: 66%;
     height: 100%;
     left: 34%;
+}
+
+.right-impdat {
+  position: relative;
+  background-color: white;
+  width: 40%;
+  left: 34%;
+  padding: 50px 0 0 50px;
 }
 
 .right > div {
@@ -89,11 +118,18 @@ textarea {
     width: 80%;
     height: 54%;
   }
+
+  .footer {
+    height: 50px;
+    position: absolute;
+    background-color: var(--mintgreen);
+    bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
   .left {
-    position: absolute;
+    position: relative;
     background-color: var(--mintgreen);
     height: 34%;
     width: 100%;
@@ -118,10 +154,16 @@ textarea {
 
 
 .right {
-    position: relative;
     background-color: white;
     height: 66%;
     width: 100%;
+}
+
+.right-impdat {
+  background-color: white;
+  height: 66%;
+  width: 90%;
+  margin-left: 15px;
 }
 
 .right > div {
@@ -135,6 +177,15 @@ textarea {
     text-align: center;
     top: 50vh;
 }
+
+.right nav#footnav {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  left: 50%;
+}
+
+
 
 input[type=text], input[type=email], select, textarea {
     width: 100%; /* Full width */
@@ -173,4 +224,12 @@ textarea {
     background-color: white;
     padding: 20px;
   }
+
+  .footer {
+    height: 50px;
+    position: absolute;
+    background-color: var(--mintgreen);
+    width: 100%;
+  }
+
 }
