@@ -1,0 +1,176 @@
+:root {
+  --mintgreen: #9BDDB9;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 680px) {
+
+  .left {
+    position: absolute;
+    background-color: var(--mintgreen);
+    width: 34%;
+    height: 100%;
+}
+
+.left img {
+  position: relative;
+  width: 82%;
+    top: calc(50vh - (15vh / 2));
+    left: 10%;
+} 
+
+.left .left-text {
+  position: relative;
+  font-weight: bold;
+  font-size: larger;
+  top: 50%;
+  text-align: center;
+  padding: 0px 25px 0 25px;
+}
+
+
+
+.right {
+    position: absolute;
+    background-color: white;
+    width: 66%;
+    height: 100%;
+    left: 34%;
+}
+
+.right > div {
+  position: absolute;
+  left: 8%;
+  top: calc(50vh - (54% / 2));
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+textarea {
+  position: relative;
+  height: 250px;
+}
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--mintgreen);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(#9BDDB9);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    height: 54%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .left {
+    position: absolute;
+    background-color: var(--mintgreen);
+    height: 34%;
+    width: 100%;
+}
+
+.left img {
+  position: relative;
+  width: 82%;
+    top: 10px;
+    left: 10%;
+} 
+
+.left .left-text {
+  position: relative;
+  font-weight: bold;
+  font-size: larger;
+  top: 15px;
+  text-align: center;
+  padding: 0px 25px 0 25px;
+}
+
+
+
+.right {
+    position: relative;
+    background-color: white;
+    height: 66%;
+    width: 100%;
+}
+
+.right > div {
+  position: absolute;
+  top: 33.5vh;
+}
+
+.right .right-text {
+  font-size: larger;
+    width: 100%;
+    text-align: center;
+    top: 50vh;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+textarea {
+  position: relative;
+  height: 250px;
+}
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--mintgreen);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(#9BDDB9);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+}
